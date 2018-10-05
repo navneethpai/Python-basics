@@ -1,0 +1,13 @@
+#Program to check a given no is armstrong or not.
+n=input()
+i=1
+s=0
+m=n
+while(i<n):
+    t=n%10
+    s=s+(t**3)
+    n/=10
+if(m==s):
+    print "Its armstrong"
+else:
+    print "Its not"
