@@ -1,0 +1,28 @@
+#uses of function
+import math
+def area_c(r):
+    area=math.pi*r*r
+    print area
+def area_r(l,b):
+	area=l*b
+	print area
+def area_s(a):
+	area=a*a
+	print area
+def area_t(b,h):
+	area=0.5*h*b
+	print area
+print "MENU\n----\n1.Circle\n2.Rectangle\n3.Square\n4.Triangle"
+n=input("Enter the choice:")
+if(n==1):
+	r=input("enter the radius:")
+	area_c(r)
+elif(n==2):
+	l,b=inpuut("Enter the length and breadth:")
+	area_r(l,b)
+elif(n==3):
+	a=input("Enter the side:")
+	area_s(a)
+else:
+	b,h=input("Enter the height and base:")
+	area_t(b,h)
