@@ -1,0 +1,6 @@
+#uses of function
+import math
+def area_c(r):
+    area=math.pi*r*
+    return area
+def area_r
