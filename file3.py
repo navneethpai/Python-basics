@@ -6,8 +6,6 @@ f.close()
 f=open('pal.txt','r')	
 for i in f:
 	m.append(i)
-for i in f:
-	m.append(i)
 print len(m)
 for j in range(len(m)):	
 	for k in f.read():	
