@@ -1,18 +1,22 @@
 n=raw_input('Enter the str:')
+m=[]
 f=open('pal.txt','r+')
-f.truncate(0)
+for i in f:
+	m.append(i)
 f.write(n)
 f.close()
-m=[]
 f=open('pal.txt','r')	
 for i in f:
 	m.append(i)
-for i in range(len(m)):
-	a=m[i]	
-	if a==a[::-1]:
-		print a,'Its paladrone\n'
-		continue
-	else:
-		print a,'its not\n'
-		continue
+print len(m)
+for j in range(len(m)):	
+	for k in f.read():	
+		if k=='':		
+			continue
+		else:
+			for i in m:
+				if i==i[::-1]:
+					print i,'Its paladrone\n'
+				else:
+					print i,'its not\n'
 f.close()
