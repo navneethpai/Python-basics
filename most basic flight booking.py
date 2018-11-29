@@ -28,17 +28,3 @@ while(ch=='y'):
 	else:	
 		print 'all seat are occpuied'
 	ch=raw_input('next user(y):')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
